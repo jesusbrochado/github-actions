@@ -1,0 +1,14 @@
+name: Shell Commands
+
+on: [push, pull_request]
+
+jobs: 
+  run-shell-command:
+   runs-on: ubuntu-latest
+   steps:
+    - name: actualizar repositorio
+      run: echo "git pull origin production"
+    - name: deploy
+      run: |
+        node -v
+        npm -v
