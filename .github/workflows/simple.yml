@@ -8,10 +8,13 @@ jobs:
    steps:
     - name: actualizar repositorio
       run: git clone https://github.com/jesusbrochado/aapc
+    - name: test
+      run: |
+        ls -lh
+        pwd
     - name: deploy
       run: |
         npm install
         npm build
         ng serve
-    - name: test
-      run: ls -lh
+    
