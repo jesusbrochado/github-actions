@@ -17,5 +17,8 @@ jobs:
       run: |
         npm install
         npm build
+        ls -lh ./dist
+        ls -lh ./src/dist
+
         
     
