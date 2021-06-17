@@ -13,6 +13,7 @@ jobs:
         ls -lh
         pwd
     - name: deploy
+      working-directory: ./aapc
       run: |
         npm install
         npm build
