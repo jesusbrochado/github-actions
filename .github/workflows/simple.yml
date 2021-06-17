@@ -7,10 +7,11 @@ jobs:
    runs-on: ubuntu-latest
    steps:
     - name: actualizar repositorio
-      run: git clone https://github.com/jesusbrochado/github-actions.git
+      run: git clone https://github.com/jesusbrochado/aapc
     - name: deploy
       run: |
-        node -v
-        npm -v
+        npm install
+        npm build
+        ng serve
     - name: test
       run: ls -lh
