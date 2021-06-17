@@ -7,7 +7,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
     - name: actualizar repositorio
-      run: echo "git pull origin production"
+      run: git clone https://github.com/jesusbrochado/github-actions.git
     - name: deploy
       run: |
         node -v
